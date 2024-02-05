@@ -86,7 +86,7 @@ const handleClickDownload = ()=>{
            <div key={index} className='song px-3  w-60 py-2  bg-zinc-100 rounded-md'>
            <h3 className='font-semibold  text-xl '>{elem.name}</h3>
            <p className='text-xs mt-2'>{elem.description}</p>
-           <button onMouseOver={handleClickDownload} className='px-4 bg-blue-400 text-white rounded-md py-1'>Download</button>
+           <button onClick={handleClickDownload} className='px-4 bg-blue-400 text-white rounded-md py-1'>Download</button>
        </div>
      ))}
     </div>
