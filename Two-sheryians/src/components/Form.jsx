@@ -34,24 +34,51 @@
 
 //using controlled components
 
-import React,{useState} from 'react'
+// import React,{useState} from 'react'
+
+// function Form() {
+//     const [val, setVal] = useState({name:"",email:""});
+//     const handleSubmit =(event)=>{
+// event.preventDefault()
+// console.log(val)
+//     }
+//   return (
+//    <>
+// <form action="" onSubmit={handleSubmit}>
+// <input type="text" onChange={(event)=>setVal({...val,name:event.target.value})} placeholder='name'/>
+// <input type="text" onChange={(event)=>setVal({...val,email:event.target.value})} placeholder='email'/>
+// <input type="submit" />
+// </form>
+
+//    </>
+//   )
+// }
+
+// export default Form
+
+
+
+
+
+
+// using hooks
+
+import React from 'react'
+import {useForm} from 'react-hook-form'
 
 function Form() {
-    const [val, setVal] = useState({name:"",email:""});
-    const handleSubmit =(event)=>{
-event.preventDefault()
-console.log(val)
-    }
+    const {register,handleSubmit} = useForm()
   return (
-   <>
-<form action="" onSubmit={handleSubmit}>
-<input type="text" onChange={(event)=>setVal({...val,name:event.target.value})} placeholder='name'/>
-<input type="text" onChange={(event)=>setVal({...val,email:event.target.value})} placeholder='email'/>
+    <>
+    <form action="" onSubmit={handleSubmit}>
+<input type="text" {...register('name')}  placeholder='name'/>
+<input type="text" {...register('email')} placeholder='email' />
 <input type="submit" />
-</form>
 
-   </>
+    </form>
+    </>
   )
 }
 
 export default Form
+
