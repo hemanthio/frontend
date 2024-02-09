@@ -63,22 +63,22 @@
 
 // using hooks
 
-import React from 'react'
-import {useForm} from 'react-hook-form'
+// import React from 'react'
+// import useForm from 'react-hook-form'
 
-function Form() {
-    const {register,handleSubmit} = useForm()
-  return (
-    <>
-    <form action="" onSubmit={handleSubmit}>
-<input type="text" {...register('name')}  placeholder='name'/>
-<input type="text" {...register('email')} placeholder='email' />
-<input type="submit" />
+// function Form() {
+//     const {register,handleSubmit} = useForm()
+//   return (
+//     <>
+//     <form action="" onSubmit={handleSubmit}>
+// <input type="text" {...register('name')}  placeholder='name'/>
+// <input type="text" {...register('email')} placeholder='email' />
+// <input type="submit" />
 
-    </form>
-    </>
-  )
-}
+//     </form>
+//     </>
+//   )
+// }
 
-export default Form
+// export default Form
 

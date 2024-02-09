@@ -52,44 +52,56 @@ export default Cards  */
 
 
 
+// import React from 'react'
+
+// function Cards() {
+
+//     const data =[
+//     {
+// name:"Mahiya ve",
+// description:"lorem ipsum hii hello namste"
+//     },
+
+//     {
+//         name:"kanule kanave",
+//         description:"jaali leni vayuvedo pranam ithe thiselye"
+//             },
+//  {
+//         name:"gaali valuga",
+//         description:"lorem ipsum hii hello namste"
+//   },
+
+
+
+// ]
+
+
+// const handleClickDownload = ()=>{
+//     alert("namamste")
+// }
+
+//   return (
+//     <div className='w-full h-screen bg-zinc-300 flex flex-col gap-2 items-center justify-center'>
+//      {data.map((elem,index)=>(
+//            <div key={index} className='song px-3  w-60 py-2  bg-zinc-100 rounded-md'>
+//            <h3 className='font-semibold  text-xl '>{elem.name}</h3>
+//            <p className='text-xs mt-2'>{elem.description}</p>
+//            <button onClick={handleClickDownload} className='px-4 bg-blue-400 text-white rounded-md py-1'>Download</button>
+//        </div>
+//      ))}
+//     </div>
+//   )
+// }
+
+// export default Cards
+
+
+
 import React from 'react'
 
 function Cards() {
-
-    const data =[
-    {
-name:"Mahiya ve",
-description:"lorem ipsum hii hello namste"
-    },
-
-    {
-        name:"kanule kanave",
-        description:"jaali leni vayuvedo pranam ithe thiselye"
-            },
- {
-        name:"gaali valuga",
-        description:"lorem ipsum hii hello namste"
-  },
-
-
-
-]
-
-
-const handleClickDownload = ()=>{
-    alert("namamste")
-}
-
   return (
-    <div className='w-full h-screen bg-zinc-300 flex flex-col gap-2 items-center justify-center'>
-     {data.map((elem,index)=>(
-           <div key={index} className='song px-3  w-60 py-2  bg-zinc-100 rounded-md'>
-           <h3 className='font-semibold  text-xl '>{elem.name}</h3>
-           <p className='text-xs mt-2'>{elem.description}</p>
-           <button onClick={handleClickDownload} className='px-4 bg-blue-400 text-white rounded-md py-1'>Download</button>
-       </div>
-     ))}
-    </div>
+    <div>Cards</div>
   )
 }
 
